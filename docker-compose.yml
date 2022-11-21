@@ -21,6 +21,7 @@ services:
       - shared-network
   client:
     image : inventory-react:latest
+    build : ./invento-react-app
     ports:
       - "3000:3000"
     expose:
